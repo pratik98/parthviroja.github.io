@@ -1,0 +1,267 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 Nov, 2014, 2:16:37 PM
+    Author     : PARTH
+*/
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family:'Calibri';
+    font-weight:lighter;
+    font-size:20px;
+    text-decoration:none;
+    list-style-type:none;
+    outline:none;
+
+    color:#fff;
+    text-shadow:1px 1px 1px rgba(0,0,0,0.1);
+
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+
+}
+
+h1{
+    color:#990000;
+    font-size:1em;
+}
+h2{
+    color:#990000;
+    font-size:2em;
+}
+h3{
+    color:#990000;
+    font-size:3em;
+}
+h4{
+    color:#990000;
+    font-size:4em;
+}
+h5{
+    color:#990000;
+    font-size:5em;
+}
+h6{
+    color:#990000;
+    font-size:6em;
+}
+
+p,ul,li{
+    letter-spacing:1px;
+    display:block;
+    padding:4px;
+}
+
+a{
+    font-size:inherit;
+    color:inherit;
+    border-bottom:1px dotted #990000;
+}
+
+hr{
+    border:0px;
+    border-bottom:1px dotted #000;
+    margin:10px;
+}
+
+
+html,body,.wrapper{
+    height:100%;
+    min-height:100%;
+    min-height:100vh;
+}
+
+body{
+
+    background-color:#000;
+    background-image:url('1600.jpg');
+    background-position:center center;
+    background-attachment:fixed;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+
+}
+
+.page{
+    position:absolute;
+    display:block;
+    top:60px;
+    right:60px;
+    width:70%;
+    max-width:70%;
+    padding:20px;
+    min-height:100vh;
+    max-height:100vh;
+    z-index:11111;
+
+}
+
+.page > .block{
+    display:block;
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+.block > div{
+    display:inline-block;
+    padding:10px 20px;
+    margin-bottom:40px;
+    background-color:rgba(255,255,255,0.1);
+    border-radius:10px;
+}
+
+.block > div > ul{
+    text-align:right;
+}
+
+.my-name{
+    color:#990000;
+}
+.my-name span{
+    font-size:inherit;
+}
+
+.title{
+    text-align:right;
+    color:#990000;
+}
+.tag{
+    background-color:#990000;
+    color:#fff;
+    font-size:inherit;
+    margin:0px 4px;
+    padding:0px 4px;
+}
+
+.show-1{
+    -webkit-animation:block-show 1s ease;
+}
+.show-2{
+    -webkit-animation:block-show 2s ease;
+}
+.show-3{
+    -webkit-animation:block-show 3s ease;
+}
+.show-4{
+    -webkit-animation:block-show 4s ease;
+}
+.show-5{
+    -webkit-animation:block-show 5s ease;
+}
+.show-6{
+    -webkit-animation:block-show 6s ease;
+}
+
+
+@-webkit-keyframes block-show {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@-webkit-keyframes block-hide {
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+
+@media (max-width:1600px){
+    body{
+        background-size:100% 100%;
+    }
+}
+@media (max-width:1366px){
+
+    body{
+
+        background-image:url('image/1366.jpg');
+
+    }
+}
+@media (max-width:1280px){
+
+}
+@media (max-width:1024px){
+    body{
+
+        background-image:url('image/1024.jpg');
+
+    }
+}
+@media (max-width:768px){
+
+    body{
+
+        background-image:url('image/768.jpg');
+
+    }
+
+
+    .page{
+        position:relative;
+        margin:0 auto;
+        top:0px;
+        right:0px;
+        display:block;
+        width:90%;
+        max-width:90%;
+        padding:20px;
+    }
+
+
+    .page > .block{
+        display:block;
+    }
+
+    .block > div{
+        display:block;
+        padding:5px 10px;
+        margin-bottom:10px;
+        background-color:rgba(255,255,255,0.1);
+    }
+
+    h4{
+        text-align:right;
+        font-size:2em;
+    }
+
+    h2{
+        font-size:1.5em;
+    }
+
+    p,ul,li{
+        font-size:14px;
+    }
+
+}
+@media (max-width:480px){
+    body{
+
+        //background-image:url('image/480.jpg');
+
+    }
+}
+@media (max-width:322px){
+
+    body{
+
+        background-image:url('image/320.jpg');
+
+    }
+
+}
