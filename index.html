@@ -10,21 +10,6 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-
-        <script>
-            $(window).mousemove(function (event) {
-                var w = $(this).width() / 2;
-                var v = 0;
-                if (event.pageX > w) {
-                    v = ((event.pageX - w) / 20);
-                } else {
-                    v = ((event.pageX - w) / 20);
-                }
-                $("#container").css({'-webkit-transform': 'rotateY(' + v + 'deg)'});
-            });
-        </script>
-
         <style>
 
             @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400);
@@ -91,6 +76,14 @@ and open the template in the editor.
                 transition: all 1.0s ease;
                 background:url('image/0007.png') no-repeat center center;
                 background-size:100% 100%;
+
+
+                -webkit-animation:rotateY 5s ease infinite;  
+                -moz-animation:rotateY 5s ease infinite;  
+                -ms-animation:rotateY 5s ease infinite;  
+                -o-animation:rotateY 5s ease infinite;  
+                animation:rotateY 5s ease infinite;
+
             }
 
             #container *{
@@ -119,8 +112,32 @@ and open the template in the editor.
             }
 
 
-            @media(max-width:768){
+            @-webkit-keyframes rotateY{
+                0%{
+                    -webkit-transform: rotateY(0deg);
+                }
+                25%{
+                    -webkit-transform: rotateY(-30deg);
+                }
+                50%{
+                    -webkit-transform: rotateY(0deg);
+                }
+                75%{
+                    -webkit-transform: rotateY(30deg);
+                }
+                100%{
+                    -webkit-transform: rotateY(0deg);
+                }
+            }
+
+            @media(max-width:768px){
+
+                #container{
+                    width:100%;
+                    background-size:100% 100%;
+                }
                 .name{
+                    margin:26% auto auto auto;
                     font-size:3em;
                 }
                 .msg{
@@ -130,6 +147,10 @@ and open the template in the editor.
                     font-size:1.2em;
                 }
             }
+
+
+
+
         </style>
     </head>
     <body>
