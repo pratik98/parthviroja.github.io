@@ -8,7 +8,9 @@ and open the template in the editor.
     Author     : parth
 */
 
-@media(max-device-width:768px){
+
+@media screen and (max-device-width: 768px) and (max-device-width: 767px){
+ 
     
     .header{
         min-height:200px !important;
