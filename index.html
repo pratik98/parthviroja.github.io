@@ -6,158 +6,164 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Parth Viroja</title>
+        <title>Parth Viroja : portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="geo.placename" content="Ranujadham Society, Bombay Market Rd, Ranujadham Society, Varachha, Surat, Gujarat 395010, India" />
+        <meta name="geo.position" content="21.2019730;72.8642320" />
+        <meta name="geo.region" content="IN-Gujarat" />
+        <meta name="ICBM" content="21.2019730, 72.8642320" />
 
-        <style>
+        <link href="css/layout.css" type="text/css" rel="stylesheet" media="all"  />
+        <link href="css/animate.css" type="text/css" rel="stylesheet" media="all"  />
+        <link href="css/responsive.css" type="text/css" rel="stylesheet" media="all"  />
 
-            @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400);
+        <script src="//code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
 
-            ::selection{ background-color:transparent; color:#fff; }
-            ::moz-selection{ background-color:transparent; color:#fff; }
-            ::webkit-selection{ background-color:transparent; color:#fff; }
-
-
-            *{
-                margin:0px;
-                padding:0px;
-                font-family: 'Source Sans Pro','Calibri';
-                font-weight:200;
-
-                -webkit-box-sizing:border-box;
-                -moz-box-sizing:border-box;
-                -ms-box-sizing:border-box;
-                -o-box-sizing:border-box;
-                box-sizing:border-box;
-            }
-
-            html,body,#container{
-                height:100%;
-                height:100vh;
-                max-height:100%;
-                min-height:100%;
-                overflow:hidden;
-            }
-
-            body{
-
-                color:#fff;
-                background-color:#000;
-
-                -webkit-perspective: 1300;
-                -moz-perspective: 1300px;
-                -ms-perspective: 1300;
-                perspective: 1300;
-
-                -webkit-perspective-origin: 50% 50%;
-                -moz-perspective-origin: 50% 50%;
-                -ms-perspective-origin: 50% 50%;
-                perspective-origin:50% 50%;
-            }
-            #container{
-                position: relative;
-                margin:0 auto;
-                display:block;
-                width:60%;
-                height:100%;
-                height:100vh;
-                -webkit-transform-style: preserve-3d;
-                -moz-transform-style: preserve-3d;
-                -ms-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-                -webkit-transform-origin: 50% 50%;
-                -moz-transform-origin: 50% 50%;
-                -ms-transform-origin: 50% 50%;
-                transform-origin: 50% 50%;
-                -webkit-transition: all 1.0s ease;
-                -moz-transition: all 1.0s ease;
-                -ms-transition: all 1.0s ease;
-                transition: all 1.0s ease;
-                background:url('image/0007.png') no-repeat center center;
-                background-size:100% 100%;
-
-
-                -webkit-animation:rotateY 5s ease infinite;  
-                -moz-animation:rotateY 5s ease infinite;  
-                -ms-animation:rotateY 5s ease infinite;  
-                -o-animation:rotateY 5s ease infinite;  
-                animation:rotateY 5s ease infinite;
-
-            }
-
-            #container *{
-                vertical-align:middle !important;
-            }
-
-            .name{
-                display:block;
-                margin:15% auto auto auto;
-                font-size:6em;
-                text-align:center;
-            }
-            .msg{
-                display:block;
-                margin:20px auto;
-                font-size:1.6em;
-                color:#000;
-                text-align:center;
-            }
-            .link{
-                display:block;
-                margin:0px auto;
-                font-size:2em;
-                font-weight:300;
-                text-align:center;
-            }
-
-
-            @-webkit-keyframes rotateY{
-                0%{
-                    -webkit-transform: rotateY(0deg);
-                }
-                25%{
-                    -webkit-transform: rotateY(-30deg);
-                }
-                50%{
-                    -webkit-transform: rotateY(0deg);
-                }
-                75%{
-                    -webkit-transform: rotateY(30deg);
-                }
-                100%{
-                    -webkit-transform: rotateY(0deg);
-                }
-            }
-
-            @media(max-width:768px){
-
-                #container{
-                    width:100%;
-                    background-size:100% 100%;
-                }
-                .name{
-                    margin:26% auto auto auto;
-                    font-size:3em;
-                }
-                .msg{
-                    font-size:1.6em;
-                }
-                .link{
-                    font-size:1.2em;
-                }
-            }
-
-
-
-
-        </style>
     </head>
     <body>
-        <div id="container">
-            <p class="name">Parth Viroja</p>
-            <p class="link">www.parthviroja.in</p>
-            <p class="msg">coming soon</p>
+
+
+        <nav class="main-menu ">
+            <ul class="">
+                <li><a class="" href="#home" title="Facebook" target="_blank">home</a></li>
+
+                <li><a class=""  href="#about">about me</a></li>
+                <li><a class="" href="#contact">touch with me</a></li>
+            </ul>
+
+        </nav>
+
+
+        <div class="sections">
+            <section id="home" class="home">
+
+                <div class="header">
+
+                    <p class="name">
+                        Parth Viroja
+                    </p>
+                </div>
+
+                <div class="header-info">
+                    <p>
+                        As a graduate of Master of Computer Application with 6 month experience working in various web related roles, I have a wide range of skills; front end development, design, and back end development.
+                    </p>
+                    <p>
+                        I mainly take on front end development projects now but with experience in these three disciplines, I am able to work on a project with the full scope in mind. Clients find this approach to be extremely valuable as I am able to easily integrate with and provide experience and advice on all aspects of a project.
+                    </p>
+                </div>
+
+            </section>
+            <section id="about" class="about">
+
+                <article>
+                    <h1>PHP ( <span>Codeigniter</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:70%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:30%">70%</p>
+                    </div>
+                </article>
+                <article>
+                    <h1>Database ( <span>MongoDB, Mysql</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:50%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:50%">50%</p>
+                    </div>
+                </article>
+                <article>
+                    <h1>Searching Technique ( <span>Apache Solr, Elastic Search</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:50%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:50%">50%</p>
+                    </div>
+                </article>
+
+                <article>
+                    <h1>Javascript ( <span>Jquery, Paper.js</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:60%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:40%">60%</p>
+                    </div>
+                </article>
+                <article>
+                    <h1>CSS ( <span>CSS3, Bootstrap</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:70%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:30%" >70%</p>
+                    </div>
+                </article>
+                <article>
+                    <h1>HTML</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:75%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:25%">75%</p>
+                    </div>
+                </article>
+
+                <article>
+                    <h1>Graphics ( <span>GIMP</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:25%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:75%">25%</p>
+                    </div>
+                </article>
+
+
+                <article>
+                    <h1>Language ( <span>C, C++ , Python, Android</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:20%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:80%">20%</p>
+                    </div>
+                </article>
+
+
+                <article>
+                    <h1>Extra curricular ( <span>Arduino ,Processing, Autodesk Maya</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:25%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:75%">25%</p>
+                    </div>
+                </article>
+
+
+
+
+            </section>
+            <section id="contact" class="contact">
+
+                <div class="social-link-div">
+                    <a class="social-link" href="https://www.facebook.com/parthu.viroja" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a class="social-link" href="https://plus.google.com/u/0/111038441954900498647" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a>
+
+                    <a class="social-link" href="https://github.com/parthviroja" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+                    <a class="social-link" href="http://codepen.io/parthviroja/" title="Codepen.io" target="_blank"><i class="fa fa-codepen"></i></a>
+                </div>
+
+            </section>
         </div>
+
+
+        <script type="text/javascript" >
+
+            $(document).ready(function () {
+
+                $('nav.main-menu a').click(function () {
+                    var href = $.attr(this, 'href');
+                    $(this).closest('nav').find('a').removeClass('active');
+                    $(this).addClass('active');
+                    $('html, body').animate({
+                        scrollTop: $(href).offset().top
+                    }, 500, function () {
+                        window.location.hash = href;
+                    });
+                    return false;
+                });
+
+            });
+
+        </script>
+
     </body>
 </html>
