@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Parth Viroja : portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="geo.placename" content="Ranujadham Society, Bombay Market Rd, Ranujadham Society, Varachha, Surat, Gujarat 395010, India" />
+        <meta name="geo.position" content="21.2019730;72.8642320" />
+        <meta name="geo.region" content="IN-Gujarat" />
+        <meta name="ICBM" content="21.2019730, 72.8642320" />
+
+        <link href="css/layout.css" type="text/css" rel="stylesheet" media="all"  />
+        <link href="css/animate.css" type="text/css" rel="stylesheet" media="all"  />
+        <link href="css/responsive.css" type="text/css" rel="stylesheet" media="all"  />
+
+        <script src="code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+
+
+        <nav class="main-menu ">
+            <ul class="">
+                <li><a class="" href="#home" title="Facebook" target="_blank">home</a></li>
+                <li><a class=""  href="#about">about me</a></li>
+                <li><a class="" href="#contact">touch with me</a></li>
+            </ul>
+
+        </nav>
+
+
+        <div class="sections">
+            <section id="home" class="home">
+
+                <div class="header">
+
+                    <p class="name">
+                        Parth Viroja
+                    </p>
+                </div>
+
+                <div class="header-info">
+                    <p>
+                        As a graduate of Master of Computer Application with 6 month experience working in various web related roles, I have a wide range of skills; front end development, design, and back end development.
+                    </p>
+                    <p>
+                        I mainly take on front end development projects now but with experience in these three disciplines, I am able to work on a project with the full scope in mind. Clients find this approach to be extremely valuable as I am able to easily integrate with and provide experience and advice on all aspects of a project.
+                    </p>
+                </div>
+
+            </section>
+            <section id="about" class="about">
+
+                <article>
+                    <h1>PHP ( <span>Codeigniter</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:70%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:30%">70%</p>
+                    </div>
+                </article>
+                <article>
+                    <h1>Database ( <span>MongoDB, Mysql</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:50%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:50%">50%</p>
+                    </div>
+                </article>
+                <article>
+                    <h1>Searching Technique ( <span>Apache Solr, Elastic Search</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:50%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:50%">50%</p>
+                    </div>
+                </article>
+
+                <article>
+                    <h1>Javascript ( <span>Jquery, Paper.js</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:60%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:40%">60%</p>
+                    </div>
+                </article>
+                <article>
+                    <h1>CSS ( <span>CSS3, Bootstrap</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:70%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:30%" >70%</p>
+                    </div>
+                </article>
+                <article>
+                    <h1>HTML</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:75%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:25%">75%</p>
+                    </div>
+                </article>
+
+                <article>
+                    <h1>Graphics ( <span>GIMP</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:25%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:75%">25%</p>
+                    </div>
+                </article>
+
+
+                <article>
+                    <h1>Language ( <span>C, C++ , Python, Android</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:20%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:80%">20%</p>
+                    </div>
+                </article>
+
+
+                <article>
+                    <h1>Extra curricular ( <span>Arduino ,Processing, Autodesk Maya</span> )</h1>
+                    <div class="block">
+                        <div class="blockfill" style="width:25%;background:#ee0000;"></div>
+                        <p class="percentage" style="padding-right:75%">25%</p>
+                    </div>
+                </article>
+
+
+
+
+            </section>
+            <section id="contact" class="contact">
+
+                <div class="social-link-div">
+                    <a class="social-link" href="https://www.facebook.com/parthu.viroja" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a class="social-link" href="https://plus.google.com/u/0/111038441954900498647" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a>
+
+                    <a class="social-link" href="https://github.com/parthviroja" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+                    <a class="social-link" href="http://codepen.io/parthviroja/" title="Codepen.io" target="_blank"><i class="fa fa-codepen"></i></a>
+                </div>
+
+            </section>
+        </div>
+
+
+        <script type="text/javascript" >
+
+            $(document).ready(function () {
+
+                $('nav.main-menu a').click(function () {
+                    var href = $.attr(this, 'href');
+                    $(this).closest('nav').find('a').removeClass('active');
+                    $(this).addClass('active');
+                    $('html, body').animate({
+                        scrollTop: $(href).offset().top
+                    }, 500, function () {
+                        window.location.hash = href;
+                    });
+                    return false;
+                });
+
+            });
+
+        </script>
+
+    </body>
+</html>

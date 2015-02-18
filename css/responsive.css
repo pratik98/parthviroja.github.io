@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18 Feb, 2015, 8:58:48 PM
+    Author     : parth
+*/
+
+@media(max-device-width:768px){
+    
+    .header{
+        min-height:200px !important;
+    }
+    .name{
+        font-size:4em !important;
+        padding:6px;
+        padding-top:26px;
+    }
+    .header-info{
+        padding:6px;
+    }
+    
+  
+
+    article{
+        padding:6px;
+    }
+
+
+    h1,h2,h3,h4,h5,h6{
+        font-size:120%;
+        padding:6px;
+        color:#999;
+    }
+
+    h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{
+        color:#990000;
+        font-size:80%;
+    }
+
+    .sections{
+        margin-left:0px;
+    }
+
+    .main-menu{
+        top:25vh;
+        bottom:auto;
+        right:-4px;
+        left:auto;
+        width:150px;
+        background-color:rgba(0,0,0,0.9);
+        border-radius:4px;
+        padding:6px 0px;
+    }
+
+    .main-menu ul{
+        margin-top:0;
+    }
+
+     .main-menu ul li a{
+        font-size:1em;
+    }
+
+
+}
