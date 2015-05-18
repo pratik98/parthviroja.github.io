@@ -266,6 +266,7 @@ section{
 }
 
 
+
 /*********************************************************/
 
 article{
@@ -324,4 +325,10 @@ article{
     max-width:380px;
     min-height:320px;
     background-color:#000;
+}
+
+
+.job{
+	background-color:#000;
+	color:#FFF;
 }
