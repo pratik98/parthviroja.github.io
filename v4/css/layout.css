@@ -1,0 +1,334 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 Jan, 2015, 12:59:32 PM
+    Author     : parth
+*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400);
+
+
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+
+@import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great);
+
+
+::selection{ background-color:transparent; color:#fff; }
+::moz-selection{ background-color:transparent; color:#fff; }
+::webkit-selection{ background-color:transparent; color:#fff; }
+
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family:'Source Sans Pro','Calibri';
+    font-weight:300;
+    font-size:1em;
+    list-style:none;
+    text-decoration:none;
+    outline:none;
+
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+html,body{
+    //height:100%;
+    //height:100vh;
+    //min-height:100%;
+    //min-height:100vh;
+    overflow:hidden;
+    overflow-y:auto;
+}
+
+body{
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size:160%;
+    padding:20px;
+    color:#999;
+}
+
+h1 span,h2 span,h3 span,h4 span,h5 span,h6 span{
+    color:#990000;
+    font-size:70%;
+}
+
+
+.main-menu{
+    position:fixed;
+    display:block;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:auto;
+    width:20%;
+    background-color:#000;
+    z-index:111;
+}
+
+.main-menu ul{
+    margin-top:25vh;
+}
+
+.main-menu ul li{
+
+}
+
+.main-menu ul li a{
+    display:block;
+    margin:auto 10px;
+    padding:22px 10px;
+    color:#fff;
+    text-align:left;
+    font-size:2em;
+    border-left:2px solid transparent;
+
+
+
+}
+
+.main-menu ul li a.active{
+    border-left:2px solid #990000;
+}
+
+.main-menu ul li a:hover{
+    border-left:2px solid #999;
+}
+
+.main-menu ul li a:hover,nav ul li a.active{
+    color:#999;
+}
+
+
+.sections{
+    position:relative;
+    display:block;
+    margin-left:20%;
+}
+
+section{
+    position:relative;
+    display:block;
+    display:block;
+    background-color:#fff;
+}
+
+.header{
+    min-height:50vh;
+    background-color:#000;
+    overflow:hidden;
+    background-image:url('../images/galaxy-bg.jpg');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+.header .name{
+    display:block;
+    font-size:7em;
+    padding:60px;
+    padding-bottom:0px;
+    font-family: 'Fredericka the Great', cursive;
+    text-align:center;
+    color:#fff;
+}
+
+.header-info{
+    padding:80px;
+    text-align:justify;
+}
+
+.header-info p{
+    padding:10px;
+    font-size:1.1em;
+    font-size:20px;
+}
+
+
+#map-canvas{
+    display:block;
+    width:100%;
+    height:400px;
+    opacity:0.3;
+    border-radius:6px;
+    margin:80px 0px 0px 0px;
+}
+
+
+.contact-form-div{
+    text-align:center;
+}
+
+.contact-form-div input[type='email'],.contact-form-div textarea{
+    padding:16px;
+    display:block;
+    margin:4px 0px;
+    width:100%;
+    min-width:100%;
+    max-width:100%;
+    border:1px solid #dfdfdf;
+    max-height:100px;
+}
+
+.contact-form-div input[type='submit'],.contact-form-div input[type='button']{
+    padding:10px 12px;
+    display:inline-block;
+    margin:4px 0px;
+    border:1px solid #000;
+    background-color:#000;
+    color:#fff;
+    cursor:pointer;
+}
+
+/********************************************* social **********************/
+
+
+.social-link-div{
+    position:relative;
+    display:block;
+    margin:80px auto;
+    text-align: center;
+
+}
+.social-link{
+    width:60px;
+    height:60px;
+    line-height:60px !important;
+    position: relative;
+    margin:0 20px;
+    text-align: center;
+    display: inline-block;
+    color:#111;
+    font-size:24px;
+    font-weight:lighter;
+
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+.social-link i,
+.social-link span{
+    position: relative;
+    top: 2px;
+    left: 1px; 
+}
+.social-link:before{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #111;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+
+}
+.social-link:hover{
+    color: #fff;
+}
+.social-link:hover:before{
+    background: #111;
+}
+
+
+
+/*********************************************************/
+
+article{
+    position:relative;
+    display:block;
+    padding:10px 60px;
+}
+
+.block {
+    position:relative;
+    display:block;
+    border-top:2px solid #dfdfdf;
+    z-index:1;
+}
+
+.blockfill {
+    margin-top:-2px;
+    position:relative;
+    display:block;
+    width:50%;
+    height:2px;
+    z-index:2;
+}
+
+.percentage{
+    margin:0;
+    font-size:180%;
+    text-align:right;
+    color:#999;
+    margin-top: -21px;
+    margin-right: -2px;
+}
+
+
+
+/**********************************************************************/
+
+.portfolio{
+    padding:80px;
+}
+
+.portfolio ul{
+    display:block;
+    margin:0 auto;
+}
+
+.portfolio ul li{
+    display:inline-block;
+    text-align:center;
+    padding:20px;
+}
+
+.portfolio ul li > div{
+    display:block;
+    width:380px;
+    max-width:380px;
+    min-height:320px;
+    background-color:#000;
+}
+
+
+.job{
+	background-color:#000;
+	color:#FFF;
+}
