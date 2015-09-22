@@ -405,15 +405,24 @@ section{
     margin:0 auto;
     padding:10px;
     text-align:center;
+    min-height:200px;
+    vertical-align:middle;
 }
 .grid > div:hover{
     background-color:#efefef;
     border-radius:4px;
-    appearance: inherit;
+   
+}
+
+.grid *{
+    vertical-align:middle !important;
 }
 .grid img{
-    line-height:100px;
+    display:inline-block;
+    max-height:100px;
+    max-width:160px;
 }
+
 .skill .grid p{
     margin:10px auto 20px auto;
 }
