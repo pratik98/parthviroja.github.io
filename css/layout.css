@@ -480,7 +480,5 @@ section{
 }
 .social-link:hover{
     color:#000;
-}
-.social-link:hover:before{
     transform:scale(2);
 }
