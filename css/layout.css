@@ -17,7 +17,7 @@ a {
     color:#ccc;
     text-decoration: none;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,button,.button{
     font-weight:lighter;
     margin: 10px;
 }
@@ -38,6 +38,7 @@ html, body,.container {
 body {
     overflow:hidden;
     overflow-y:auto;
+    background-color: ghostwhite;
 }
 
 section{
@@ -393,14 +394,14 @@ section{
     }
 }
 
-.grid{
+.grid-layout{
     display:flex;
     flex-direction:row;
     flex-align:center;
     margin:10px auto;
 }
 
-.grid > div{
+.grid-layout > div{
     flex:1;
     margin:0 auto;
     padding:10px;
@@ -408,22 +409,33 @@ section{
     min-height:200px;
     vertical-align:middle;
 }
-.grid > div:hover{
-    background-color:#efefef;
+.grid-layout > div:hover{
+    background-color:#000;
+    color:ghostwhite;
     border-radius:4px;
-   
 }
 
-.grid *{
+.grid-layout > div:hover img{
+    filter: grayscale(100%); /* Current draft standard */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */ 
+    filter: url(resources.svg#desaturate); /* Gecko */
+    filter: gray; /* IE */
+    -webkit-filter: grayscale(1); /* Old WebKit */
+}
+
+.grid-layout *{
     vertical-align:middle !important;
 }
-.grid img{
+.grid-layout img{
     display:inline-block;
     max-height:100px;
-    max-width:160px;
+    max-width:100%;
 }
 
-.skill .grid p{
+.skill .grid-layout p{
     margin:10px auto 20px auto;
 }
 
@@ -445,9 +457,11 @@ section{
     margin:0 20px;
     text-align: center;
     display: inline-block;
-    color:#111;
+    color:#000;
     font-size:24px;
     font-weight:lighter;
+    
+    transform:scale(1.4);
 
     -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000); 
@@ -469,8 +483,8 @@ section{
     position: absolute;
     top: 0;
     left: 0;
-    background:#efefef;
-    border:1px solid #dfdfdf;
+    //background:#efefef;
+    border:10px solid rgba(0,0,0,0.1);
 
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -493,3 +507,126 @@ section{
     color:#000;
     transform:scale(2);
 }
+
+.social-link:hover::before{
+   border:10px solid #e13300;
+}
+
+.active-link{
+    color:#000;
+    transform:scale(2);
+}
+.active-link::before{
+      border:10px solid #e13300;
+}
+/*********************************************************************************/
+
+
+
+.flex-effect{
+  list-style-type:none;
+  padding:0px;
+  margin:0px;
+  display:flex;
+  height:200px;
+}
+
+.flex-effect li{
+  flex:1;
+  height:100%;
+  color:#fff;
+  transition:all 500ms ease;
+}
+
+.flex-effect li:nth-child(1){
+  background-color:#B40404;
+}
+.flex-effect li:nth-child(2){
+  background-color:#01A9DB;
+}
+.flex-effect li:nth-child(3){
+  background-color:#FFBF00;
+}
+
+.flex-effect li:hover{
+   flex:3;
+   color:#000;
+}
+
+.flex-effect li:not(:hover){
+  font-size:70%;
+}
+
+
+/******************************************************************************/
+
+.controls{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.controls > span{
+  border:0px;
+  color:#999;
+  font-weight:100;
+  padding:8px 12px;
+  cursor:pointer;
+  background:transparent;
+  outline:none !important;
+}
+
+.controls span.active{
+  color:#e13300;
+}
+
+/*******************************************************************************/
+
+
+.grid{
+    position:relative;
+    display:block;
+  padding:4px;
+  color:#fff;
+}
+
+.grid:after{
+  content: '';
+  display:inline-block;
+  width:100%;
+}
+
+.grid .item{
+  display:inline-block;
+  float:left;
+  padding:10px;
+  width:33.333333%;
+  display:none;
+  border-bottom:2px solid transparent;
+}
+
+.grid .item:hover{
+     border-bottom:2px solid #000;
+}
+
+.grid .item > div{
+  font-size:1.2em;
+  font-weight:lighter;
+  min-height:60px;
+  overflow:hidden;
+}
+
+.grid .item img{
+  display:block;
+  margin:0 auto;
+  width:100%;
+  max-width:100%;
+  vertical-align:middle;
+}
+.grid .list .item{
+    position:relative;
+    display:block;
+}
+.grid .list .item{
+  width:100% !important;
+}
+
