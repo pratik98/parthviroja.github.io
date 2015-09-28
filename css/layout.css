@@ -721,7 +721,7 @@ section
   content: '';
   clear: both;
   position:relative;
-  display:block;
+  display:block !important;
 }
 
 .grid .item
@@ -731,16 +731,6 @@ section
   width:33.333333%;
   display:none;
 }
-
-/*.grid.flow-left
-{
-  float:left;
-}
-
-.grid.flow-right
-{
-  float:right;
-}*/
 
 .grid .item > div
 {
