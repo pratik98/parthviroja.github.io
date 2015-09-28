@@ -215,8 +215,6 @@ section
   content:'';
   display:block;
   text-align:center;
-  background-color:#fff;
-  border:1px solid #fff;
   border-radius:100%;
   box-shadow:0 10px 10px rgba(0,0,0,0.2) inset;
   z-index:-1;
