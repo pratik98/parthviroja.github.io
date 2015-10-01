@@ -111,7 +111,7 @@
                                     <div><a href="http://codepen.io/parthviroja/full/JYGzpv" target="_blank" title="Ripple effect using Jquery"><img src="img/portfolio/default.png"/></a></div>
                                 </article>
                             </section>
-                           
+
                         </section>
                         <section class="touch">
                             <div class="social-link-div">
@@ -263,16 +263,23 @@
                         });
                     }
                 });
- 
-            html2canvas(document.body, {
-                  onrendered: function(canvas) {
-                    document.body.appendChild(canvas);
-                  },
-                  width: 300,
-                  height: 300
-            });
- 
- 
+
+
+                $('.item').each(function () {
+                    var _ = this;
+                    $(_).children('div').load($(_).attr('href').val());
+//                    $.get($(_).attr('href').val(),
+//                        function(data){
+//                        html2canvas(data., {
+//                            onrendered: function (canvas) {
+//                                document.body.appendChild(canvas);
+//                            },
+//                            width: 300,
+//                            height: 300
+//                        });
+//                    });
+                });
+
             });
         </script>
 
