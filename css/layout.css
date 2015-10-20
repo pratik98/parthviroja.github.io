@@ -21,7 +21,9 @@ body
     height:100%;
     overflow:hidden;
     overflow-y:auto;
+    
     background-color:ghostwhite;
+    color:#000;
 }
 
 .clearfix::after
@@ -33,7 +35,7 @@ body
 
 a
 {
-    color:#ccc;
+    color:#e13300;
     text-decoration:none;
 }
 
@@ -111,9 +113,8 @@ header .intro .profile
 {
     position:relative;
     display:inline-block;
-    margin:0 auto;
+    margin:20px auto;
     padding:20px;
-    margin:10px;
     border-radius:50%;
 }
 
@@ -185,12 +186,9 @@ header .intro .profile::before
 
 .split.open-left .header-left
 {
-    background-color:#000;
-    color:#fff;
     width:25%;
     left:auto;
     right:0px;
-    text-shadow:0px 0px 10px rgba(255,255,255,0.8);
 }
 
 
@@ -212,13 +210,10 @@ header .intro .profile::before
 }
 
 .split.open-right .header-right
-{
-    background-color:#000;
-    color:#fff;  
+{ 
     width:25%;
     right:auto;
     left:0px;
-    text-shadow:0px 0px 10px rgba(255,255,255,0.8);
 }
 
 
@@ -230,35 +225,42 @@ header .intro .profile::before
 
 
 /******************************************************************************* Skill Section */
-
-.grid-layout
-{
-    display:flex;
-    flex-direction:row;
-    flex-align:center;
-    margin:10px auto;
+.flex-box {
+  display: flex;
+  align-items: center;
+  height:200px;
+  justify-content: center;
+  alignment-baseline:middle;
 }
 
-
-
-.grid-layout > div
-{
-    flex:1;
-    margin:0 auto;
-    padding:10px;
-    text-align:center;
-    min-height:200px;
-    vertical-align:middle;
+.flex-box .item {
+  flex:2;
+  height:200px;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-.grid-layout > div:hover
+.flex-box .item-top {
+  align-self: flex-start;
+}
+
+.flex-box .item-bottom {
+  align-self: flex-end;
+}
+
+.flex-box .item-fixed {
+  flex: none;
+  max-width: 50%;
+}
+
+.flex-box .item:hover
 {
     background-color:#000;
     color:ghostwhite;
-    border-radius:4px;
 }
 
-.grid-layout > div:hover img
+.flex-box .item:hover img
 {
     filter:gray;
     -webkit-filter:grayscale(1);
@@ -267,29 +269,20 @@ header .intro .profile::before
     -o-filter:grayscale(1);
 }
 
-.grid-layout *
-{
-    vertical-align:middle!important;
-}
-
-.grid-layout img
+.flex-box .item img
 {
     display:inline-block;
     max-height:100px;
     max-width:100%;
 }
 
-.skill .grid-layout p
+.flex-box .item p
 {
     margin:10px auto 20px;
 }
 
 
 /******************************************************************************* Social Section */
-
-.social{
-    background-color:#000;
-}
 
 .social-link-div
 {
@@ -308,7 +301,7 @@ header .intro .profile::before
     margin:0 20px;
     text-align:center;
     display:inline-block;
-    color: #fff;
+    color:#000;
     font-size:24px;
     font-weight:lighter;
     transform:scale(1.4);
@@ -342,7 +335,7 @@ header .intro .profile::before
     position:absolute;
     top:0;
     left:0;
-    border: 4px solid rgba(255,255,255,0.2);
+    border: 4px solid rgba(0,0,0,0.2);
     -webkit-border-radius:2px;
     -moz-border-radius:2px;
     border-radius:2px;
@@ -391,7 +384,7 @@ header .intro .profile::before
 
 .responsive-box .box.active,
 .responsive-box .box:hover {
-    color: #fff;
+    color:ghostwhite;
     background:#000;
 }
 
@@ -405,6 +398,18 @@ header .intro .profile::before
 .responsive-box .box .item {
     padding: 16px;
     text-align: justify;
+}
+
+.responsive-box .box .item .content{
+    height:300px;
+}
+
+.responsive-box iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow:hidden;
 }
 
 @media screen and (min-width:768px) {
