@@ -44,7 +44,7 @@ a
 
 h1,h2,h3,h4,h5,h6
 {
-    font-weight:200;
+    font-weight:300;
 }
 
 .container
@@ -408,19 +408,20 @@ header .intro .profile::before
     display:block;
     margin:0 auto;
     padding:16px;
-    text-align: justify;
     vertical-align:middle;
 }
 
 .responsive-box .item .title {
     margin-bottom:10px;
-     padding:0px 6px;
+    text-align: left;
+    padding:0px 6px;
     font-size:1.4em;
 }
 
 .responsive-box .item .info {
     padding:10px 6px;
     color:#999;
+    text-align: justify;
     font-weight:400;
 }
 
