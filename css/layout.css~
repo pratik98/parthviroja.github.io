@@ -464,7 +464,7 @@ header .intro .profile::before
 .responsive-box .box:hover {
     color:#fff;
     background-color:#000;
-    background-image:url('../img/patten.png');
+    background-image:url('https://lh3.googleusercontent.com/QANRPz57h3740bZ6n2NXmJRGABkmEZIKQIMD42qBVAtQMHgi4-LGho_AJJCYBD9zkldX7Poy5rXm3DwFxGCUxKR2k3QJHuaUtasfI6kTUX_N_nbb3TMubHOUs_5AMOuO_eugx-e53OG_hSCDIVVpz4UDkanNyEmN7_2qguDdp7fxBv95a3rESmSpUHCma3_q1Nov2383kNnXeRz-srE-ubpez_qQ53ApMb5VGjyUUIvPuL1tapo4sSRqIZZvele5nS9p9cByO6KAU-QHF2ZuYa8TSNM9rEn-qQKACpF2cAY89Nl8p_9nEYtvY_KgbqVHUF4XFitHpKuCU8WTnJ3NpxQvlUj3N-Z2p7U4yfjKRAizeIUhSPR9QzbjZ4B5nLxQhAG1-LIguxavGjppQK8Xrca7q0Kv9eBel4IO9cTG4Vwi40NpTXwC-CpwfcndJ75lY9OsCkhb1PSiNH-Xn7DyZbPSGiC7OoUoSr5G_K_gGlA_y8cfWxvD_Pi0kL_5mdkw_wscI-xXxBgXJCcG3d15Fh8IhxXXQpa7st9X_w1KWtI=w24-h23-no');
 }
 
 .responsive-box.portfolio-box .box:hover .item{
@@ -528,7 +528,7 @@ header .intro .profile::before
         
     .split.open-left .header-left , .split.open-right .header-right{
         background-color:#000;
-        background-image:url('../img/patten.png');
+        background-image:url('https://lh3.googleusercontent.com/QANRPz57h3740bZ6n2NXmJRGABkmEZIKQIMD42qBVAtQMHgi4-LGho_AJJCYBD9zkldX7Poy5rXm3DwFxGCUxKR2k3QJHuaUtasfI6kTUX_N_nbb3TMubHOUs_5AMOuO_eugx-e53OG_hSCDIVVpz4UDkanNyEmN7_2qguDdp7fxBv95a3rESmSpUHCma3_q1Nov2383kNnXeRz-srE-ubpez_qQ53ApMb5VGjyUUIvPuL1tapo4sSRqIZZvele5nS9p9cByO6KAU-QHF2ZuYa8TSNM9rEn-qQKACpF2cAY89Nl8p_9nEYtvY_KgbqVHUF4XFitHpKuCU8WTnJ3NpxQvlUj3N-Z2p7U4yfjKRAizeIUhSPR9QzbjZ4B5nLxQhAG1-LIguxavGjppQK8Xrca7q0Kv9eBel4IO9cTG4Vwi40NpTXwC-CpwfcndJ75lY9OsCkhb1PSiNH-Xn7DyZbPSGiC7OoUoSr5G_K_gGlA_y8cfWxvD_Pi0kL_5mdkw_wscI-xXxBgXJCcG3d15Fh8IhxXXQpa7st9X_w1KWtI=w24-h23-no');
         background-repeat:repeat;
         background-size:auto auto
     }
