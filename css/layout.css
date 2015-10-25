@@ -170,12 +170,22 @@ header .intro .profile::before
     font-size:3em;
 }
 
-.panel-left section > h1{
-    text-align:right;
+.panel-left h1{
+    text-align:left;
+    padding:0px 0px 10px 20px;
 }
 
-.panel-right section > h1 {
-    text-align:left;
+.panel-left h1:first-child{
+    padding-top:10px;
+}
+
+.panel-right h1 {
+    text-align:right;
+    padding:0px 20px 10px 0px;
+}
+
+.panel-right h1:first-child{
+    padding-top:10px;
 }
 
 .split.open-left .panel-left
@@ -498,7 +508,7 @@ header .intro .profile::before
 }
 
 @media screen and (max-width:768px) {
-    .panel section h1{
+    .panel h1{
         text-align:left;
         font-size:1.8em;
         padding-left:20px;
