@@ -151,6 +151,9 @@ header .intro .profile::before
     position:relative;
     width:75%;
     display:none;
+    
+    transition:all 0.5s ease;
+    transform-origin:50% 0;
 }
 
 .panel-left{
@@ -370,19 +373,19 @@ header .intro .profile::before
     transform:scale(2);
 }
 
-.social-link:hover::before
+.design .social-link:hover::before , .design .active-link::before
 {
-    border:10px solid #e13300;
+    border:10px solid #0090c6;
+}
+
+.code .social-link:hover::before , .code .active-link::before
+{
+    border:10px solid #000;
 }
 
 .active-link
 {
     transform:scale(2);
-}
-
-.active-link::before
-{
-    border:10px solid #e13300;
 }
 
 /******************************************************************************* Responsive Box */
@@ -474,6 +477,23 @@ header .intro .profile::before
 .responsive-box.portfolio-box .item{
     background-color:#efefef;
 }
+
+.responsive-box.portfolio-box .item:after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.4);
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+    bottom:10px;
+    left:10%;
+    right:10%;
+    width:80%;
+    height:10px;
+    -moz-border-radius:100%;
+    border-radius:100%;
+}
+
+
 
 .responsive-box.skill-box{
     text-align:center;
